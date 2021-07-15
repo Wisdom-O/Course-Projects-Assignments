@@ -1,0 +1,2333 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0801.1333                               -->
+<workbook original-version='18.1' source-build='2020.3.0 (20203.20.0801.1333)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='marketing_campaign' inline='true' name='federated.0xb1ru619j3k4d15b28np1uhm6ef' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='marketing_campaign' name='textscan.1v5p0up0g88fo518jqt781fk9vih'>
+            <connection class='textscan' directory='C:/Users/lorwi/Documents/Salesforce' filename='marketing_campaign.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1v5p0up0g88fo518jqt781fk9vih' name='marketing_campaign.csv' table='[marketing_campaign#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator='&#9;'>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='integer' date-parse-format='yyyy' name='Year_Birth' ordinal='1' />
+            <column datatype='string' name='Education' ordinal='2' />
+            <column datatype='string' name='Marital_Status' ordinal='3' />
+            <column datatype='integer' name='Income' ordinal='4' />
+            <column datatype='integer' name='Kidhome' ordinal='5' />
+            <column datatype='integer' name='Teenhome' ordinal='6' />
+            <column datatype='date' name='Dt_Customer' ordinal='7' />
+            <column datatype='integer' name='Recency' ordinal='8' />
+            <column datatype='integer' name='MntWines' ordinal='9' />
+            <column datatype='integer' name='MntFruits' ordinal='10' />
+            <column datatype='integer' name='MntMeatProducts' ordinal='11' />
+            <column datatype='integer' name='MntFishProducts' ordinal='12' />
+            <column datatype='integer' name='MntSweetProducts' ordinal='13' />
+            <column datatype='integer' name='MntGoldProds' ordinal='14' />
+            <column datatype='integer' name='NumDealsPurchases' ordinal='15' />
+            <column datatype='integer' name='NumWebPurchases' ordinal='16' />
+            <column datatype='integer' name='NumCatalogPurchases' ordinal='17' />
+            <column datatype='integer' name='NumStorePurchases' ordinal='18' />
+            <column datatype='integer' name='NumWebVisitsMonth' ordinal='19' />
+            <column datatype='integer' name='AcceptedCmp3' ordinal='20' />
+            <column datatype='integer' name='AcceptedCmp4' ordinal='21' />
+            <column datatype='integer' name='AcceptedCmp5' ordinal='22' />
+            <column datatype='integer' name='AcceptedCmp1' ordinal='23' />
+            <column datatype='integer' name='AcceptedCmp2' ordinal='24' />
+            <column datatype='integer' name='Complain' ordinal='25' />
+            <column datatype='integer' name='Z_CostContact' ordinal='26' />
+            <column datatype='integer' name='Z_Revenue' ordinal='27' />
+            <column datatype='integer' name='Response' ordinal='28' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1v5p0up0g88fo518jqt781fk9vih' name='marketing_campaign.csv' table='[marketing_campaign#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator='&#9;'>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='integer' date-parse-format='yyyy' name='Year_Birth' ordinal='1' />
+            <column datatype='string' name='Education' ordinal='2' />
+            <column datatype='string' name='Marital_Status' ordinal='3' />
+            <column datatype='integer' name='Income' ordinal='4' />
+            <column datatype='integer' name='Kidhome' ordinal='5' />
+            <column datatype='integer' name='Teenhome' ordinal='6' />
+            <column datatype='date' name='Dt_Customer' ordinal='7' />
+            <column datatype='integer' name='Recency' ordinal='8' />
+            <column datatype='integer' name='MntWines' ordinal='9' />
+            <column datatype='integer' name='MntFruits' ordinal='10' />
+            <column datatype='integer' name='MntMeatProducts' ordinal='11' />
+            <column datatype='integer' name='MntFishProducts' ordinal='12' />
+            <column datatype='integer' name='MntSweetProducts' ordinal='13' />
+            <column datatype='integer' name='MntGoldProds' ordinal='14' />
+            <column datatype='integer' name='NumDealsPurchases' ordinal='15' />
+            <column datatype='integer' name='NumWebPurchases' ordinal='16' />
+            <column datatype='integer' name='NumCatalogPurchases' ordinal='17' />
+            <column datatype='integer' name='NumStorePurchases' ordinal='18' />
+            <column datatype='integer' name='NumWebVisitsMonth' ordinal='19' />
+            <column datatype='integer' name='AcceptedCmp3' ordinal='20' />
+            <column datatype='integer' name='AcceptedCmp4' ordinal='21' />
+            <column datatype='integer' name='AcceptedCmp5' ordinal='22' />
+            <column datatype='integer' name='AcceptedCmp1' ordinal='23' />
+            <column datatype='integer' name='AcceptedCmp2' ordinal='24' />
+            <column datatype='integer' name='Complain' ordinal='25' />
+            <column datatype='integer' name='Z_CostContact' ordinal='26' />
+            <column datatype='integer' name='Z_Revenue' ordinal='27' />
+            <column datatype='integer' name='Response' ordinal='28' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year_Birth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year_Birth]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>Year_Birth</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Education]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>Education</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital_Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Marital_Status]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>Marital_Status</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Income]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>Income</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Kidhome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Kidhome]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>Kidhome</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Teenhome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Teenhome]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>Teenhome</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dt_Customer</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Dt_Customer]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>Dt_Customer</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recency</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recency]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>Recency</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MntWines</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MntWines]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>MntWines</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MntFruits</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MntFruits]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>MntFruits</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MntMeatProducts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MntMeatProducts]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>MntMeatProducts</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MntFishProducts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MntFishProducts]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>MntFishProducts</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MntSweetProducts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MntSweetProducts]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>MntSweetProducts</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MntGoldProds</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MntGoldProds]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>MntGoldProds</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumDealsPurchases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumDealsPurchases]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>NumDealsPurchases</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumWebPurchases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumWebPurchases]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>NumWebPurchases</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumCatalogPurchases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumCatalogPurchases]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>NumCatalogPurchases</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumStorePurchases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumStorePurchases]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>NumStorePurchases</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumWebVisitsMonth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumWebVisitsMonth]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>NumWebVisitsMonth</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AcceptedCmp3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AcceptedCmp3]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>AcceptedCmp3</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AcceptedCmp4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AcceptedCmp4]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>AcceptedCmp4</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AcceptedCmp5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AcceptedCmp5]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>AcceptedCmp5</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AcceptedCmp1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AcceptedCmp1]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>AcceptedCmp1</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AcceptedCmp2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AcceptedCmp2]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>AcceptedCmp2</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Complain</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Complain]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>Complain</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Z_CostContact</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Z_CostContact]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>Z_CostContact</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Z_Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Z_Revenue]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>Z_Revenue</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Response</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Response]</local-name>
+            <parent-name>[marketing_campaign.csv]</parent-name>
+            <remote-alias>Response</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[AcceptedCmp1]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='No' />
+          <alias key='1' value='Yes' />
+        </aliases>
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[AcceptedCmp2]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='No' />
+          <alias key='1' value='Yes' />
+        </aliases>
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[AcceptedCmp3]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='No' />
+          <alias key='1' value='Yes' />
+        </aliases>
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[AcceptedCmp4]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='No' />
+          <alias key='1' value='Yes' />
+        </aliases>
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[AcceptedCmp5]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='No' />
+          <alias key='1' value='Yes' />
+        </aliases>
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Complain]' role='dimension' type='ordinal' />
+      <column aggregation='CountD' datatype='integer' name='[ID]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[NumWebVisitsMonth]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[Response]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='No' />
+          <alias key='1' value='Yes' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Year_Birth]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='marketing_campaign.csv' datatype='table' name='[__tableau_internal_object_id__].[marketing_campaign.csv_6EBFE33CAC8B464C80BDA29ABB936937]' role='measure' type='quantitative' />
+      <column-instance column='[AcceptedCmp1]' derivation='None' name='[none:AcceptedCmp1:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[AcceptedCmp2]' derivation='None' name='[none:AcceptedCmp2:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[AcceptedCmp3]' derivation='None' name='[none:AcceptedCmp3:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[AcceptedCmp4]' derivation='None' name='[none:AcceptedCmp4:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[AcceptedCmp5]' derivation='None' name='[none:AcceptedCmp5:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Response]' derivation='None' name='[none:Response:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (AcceptedCmp1,Marital_Status)' hidden='true' name='[Action (AcceptedCmp1,Marital_Status)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[AcceptedCmp1]' />
+          <groupfilter function='level-members' level='[Marital_Status]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (AcceptedCmp2,Marital_Status)' hidden='true' name='[Action (AcceptedCmp2,Marital_Status)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[AcceptedCmp2]' />
+          <groupfilter function='level-members' level='[Marital_Status]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (AcceptedCmp4,Marital_Status)' hidden='true' name='[Action (AcceptedCmp4,Marital_Status)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[AcceptedCmp4]' />
+          <groupfilter function='level-members' level='[Marital_Status]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (AcceptedCmp5,Marital_Status)' hidden='true' name='[Action (AcceptedCmp5,Marital_Status)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[AcceptedCmp5]' />
+          <groupfilter function='level-members' level='[Marital_Status]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (AcceptedCmp1,Marital_Status)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:AcceptedCmp1:ok]' />
+          <groupfilter function='level-members' level='[none:Marital_Status:nk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (AcceptedCmp2,Marital_Status)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:AcceptedCmp2:ok]' />
+          <groupfilter function='level-members' level='[none:Marital_Status:nk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (AcceptedCmp3,Marital_Status)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:AcceptedCmp3:ok]' />
+          <groupfilter function='level-members' level='[none:Marital_Status:nk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (AcceptedCmp4,Marital_Status)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:AcceptedCmp4:ok]' />
+          <groupfilter function='level-members' level='[none:Marital_Status:nk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (AcceptedCmp5,Marital_Status)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:AcceptedCmp5:ok]' />
+          <groupfilter function='level-members' level='[none:Marital_Status:nk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Marital_Status,Response)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Marital_Status:nk]' />
+          <groupfilter function='level-members' level='[none:Response:ok]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Marital_Status:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Absurd&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Single&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Married&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Widow&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Divorced&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Together&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Alone&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;YOLO&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:AcceptedCmp2:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:AcceptedCmp3:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:AcceptedCmp4:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:AcceptedCmp5:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Response:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:AcceptedCmp1:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='marketing_campaign.csv' id='marketing_campaign.csv_6EBFE33CAC8B464C80BDA29ABB936937'>
+            <properties context=''>
+              <relation connection='textscan.1v5p0up0g88fo518jqt781fk9vih' name='marketing_campaign.csv' table='[marketing_campaign#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator='&#9;'>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='integer' date-parse-format='yyyy' name='Year_Birth' ordinal='1' />
+                  <column datatype='string' name='Education' ordinal='2' />
+                  <column datatype='string' name='Marital_Status' ordinal='3' />
+                  <column datatype='integer' name='Income' ordinal='4' />
+                  <column datatype='integer' name='Kidhome' ordinal='5' />
+                  <column datatype='integer' name='Teenhome' ordinal='6' />
+                  <column datatype='date' name='Dt_Customer' ordinal='7' />
+                  <column datatype='integer' name='Recency' ordinal='8' />
+                  <column datatype='integer' name='MntWines' ordinal='9' />
+                  <column datatype='integer' name='MntFruits' ordinal='10' />
+                  <column datatype='integer' name='MntMeatProducts' ordinal='11' />
+                  <column datatype='integer' name='MntFishProducts' ordinal='12' />
+                  <column datatype='integer' name='MntSweetProducts' ordinal='13' />
+                  <column datatype='integer' name='MntGoldProds' ordinal='14' />
+                  <column datatype='integer' name='NumDealsPurchases' ordinal='15' />
+                  <column datatype='integer' name='NumWebPurchases' ordinal='16' />
+                  <column datatype='integer' name='NumCatalogPurchases' ordinal='17' />
+                  <column datatype='integer' name='NumStorePurchases' ordinal='18' />
+                  <column datatype='integer' name='NumWebVisitsMonth' ordinal='19' />
+                  <column datatype='integer' name='AcceptedCmp3' ordinal='20' />
+                  <column datatype='integer' name='AcceptedCmp4' ordinal='21' />
+                  <column datatype='integer' name='AcceptedCmp5' ordinal='22' />
+                  <column datatype='integer' name='AcceptedCmp1' ordinal='23' />
+                  <column datatype='integer' name='AcceptedCmp2' ordinal='24' />
+                  <column datatype='integer' name='Complain' ordinal='25' />
+                  <column datatype='integer' name='Z_CostContact' ordinal='26' />
+                  <column datatype='integer' name='Z_Revenue' ordinal='27' />
+                  <column datatype='integer' name='Response' ordinal='28' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0xb1ru619j3k4d15b28np1uhm6ef'>
+      <datasources>
+        <datasource caption='marketing_campaign' name='federated.0xb1ru619j3k4d15b28np1uhm6ef' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0xb1ru619j3k4d15b28np1uhm6ef'>
+        <column aggregation='Sum' datatype='integer' name='[Complain]' role='dimension' type='ordinal' />
+        <column datatype='string' name='[Education]' role='dimension' type='nominal' />
+        <column datatype='integer' name='[Kidhome]' role='dimension' type='ordinal' />
+        <column datatype='integer' name='[NumWebVisitsMonth]' role='dimension' type='quantitative' />
+        <column-instance column='[Complain]' derivation='None' name='[none:Complain:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[Education]' derivation='None' name='[none:Education:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Kidhome]' derivation='None' name='[none:Kidhome:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[NumWebVisitsMonth]' derivation='None' name='[none:NumWebVisitsMonth:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Complain:ok]'>
+        <groupfilter function='member' level='[none:Complain:ok]' member='1' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Education:nk]'>
+        <groupfilter function='member' level='[none:Education:nk]' member='&quot;Graduation&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Kidhome:ok]'>
+        <groupfilter function='member' level='[none:Kidhome:ok]' member='0' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='quantitative' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:NumWebVisitsMonth:qk]' included-values='in-range' />
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Historic Offer Acceptance' type='sheet' worksheet='First Campaign' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Historic Offer Acceptance' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Historic Offer Acceptance' type='sheet' worksheet='Second Campaign' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Historic Offer Acceptance' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Historic Offer Acceptance' type='sheet' worksheet='Third Campaign' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Historic Offer Acceptance' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Historic Offer Acceptance' type='sheet' worksheet='Current Response' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Historic Offer Acceptance' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action6]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Historic Offer Acceptance' type='sheet' worksheet='FIfth Campaign' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Historic Offer Acceptance' />
+      </command>
+    </action>
+    <action caption='Filter 6 (generated)' name='[Action7]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Historic Offer Acceptance' type='sheet' worksheet='Fourth Campaign' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Historic Offer Acceptance' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Current Response'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign' name='federated.0xb1ru619j3k4d15b28np1uhm6ef' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xb1ru619j3k4d15b28np1uhm6ef'>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp1]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp2]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp4]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp5]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Complain]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Education]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='integer' name='[ID]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Kidhome]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[NumWebVisitsMonth]' role='dimension' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Response]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column-instance column='[Complain]' derivation='None' name='[none:Complain:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Education]' derivation='None' name='[none:Education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Kidhome]' derivation='None' name='[none:Kidhome:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NumWebVisitsMonth]' derivation='None' name='[none:NumWebVisitsMonth:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Response]' derivation='None' name='[none:Response:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[ID]' derivation='Count' name='[pcto:cnt:ID:qk:4]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='RowInPane' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp1,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp1]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp2,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp2]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp4,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp4]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp5,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp5]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Exclusions (Marital_Status,Response)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Marital_Status:nk]' />
+              <groupfilter function='level-members' level='[none:Response:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Exclusions (Marital_Status,Response)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Education:nk]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Kidhome:ok]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Complain:ok]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:NumWebVisitsMonth:qk]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp1,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp4,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp5,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp2,Marital_Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:cnt:ID:qk:4]' value='56' />
+            <format attr='display' class='0' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:cnt:ID:qk:4]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Response:ok]' value='74' />
+            <format attr='width' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]' value='82' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]' value='false' />
+            <format attr='display' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Response:ok]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Response:ok]' />
+              <text column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000'><![CDATA[Marital_Status:	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#000000'><![CDATA[Responded to Last Campaign? :	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Response:ok]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#000000'><![CDATA[Percentage of Customers:	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:cnt:ID:qk:4]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:cnt:ID:qk:4]</rows>
+        <cols>([federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk] / [federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Response:ok])</cols>
+      </table>
+      <simple-id uuid='{0204C0C6-CC9D-497B-BB61-6A0142C027E1}' />
+    </worksheet>
+    <worksheet name='FIfth Campaign'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign' name='federated.0xb1ru619j3k4d15b28np1uhm6ef' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xb1ru619j3k4d15b28np1uhm6ef'>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp1]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp2]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp4]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp5]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Complain]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Education]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='integer' name='[ID]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Kidhome]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[NumWebVisitsMonth]' role='dimension' type='quantitative' />
+            <column-instance column='[AcceptedCmp5]' derivation='None' name='[none:AcceptedCmp5:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Complain]' derivation='None' name='[none:Complain:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Education]' derivation='None' name='[none:Education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Kidhome]' derivation='None' name='[none:Kidhome:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NumWebVisitsMonth]' derivation='None' name='[none:NumWebVisitsMonth:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ID]' derivation='CountD' name='[pcto:ctd:ID:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Pane' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp1,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp1]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp2,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp2]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp4,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp4]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Exclusions (AcceptedCmp5,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:AcceptedCmp5:ok]' />
+              <groupfilter function='level-members' level='[none:Marital_Status:nk]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Exclusions (AcceptedCmp5,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Education:nk]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Kidhome:ok]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Complain:ok]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:NumWebVisitsMonth:qk]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp1,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp4,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp2,Marital_Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]' value='false' />
+            <format attr='display' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp5:ok]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp5:ok]' />
+              <text column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000'><![CDATA[Accepted  Campaign 5? :	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp5:ok]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#000000'><![CDATA[Marital_Status:	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#000000'><![CDATA[Percentage of customers:	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]</rows>
+        <cols>([federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk] / [federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp5:ok])</cols>
+      </table>
+      <simple-id uuid='{8B9205DD-A24A-4D9A-9E28-03F64E2D3B6F}' />
+    </worksheet>
+    <worksheet name='First Campaign'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign' name='federated.0xb1ru619j3k4d15b28np1uhm6ef' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xb1ru619j3k4d15b28np1uhm6ef'>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp1]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp2]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp4]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp5]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Complain]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Education]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='integer' name='[ID]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Kidhome]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[NumWebVisitsMonth]' role='dimension' type='quantitative' />
+            <column-instance column='[AcceptedCmp1]' derivation='None' name='[none:AcceptedCmp1:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Complain]' derivation='None' name='[none:Complain:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Education]' derivation='None' name='[none:Education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Kidhome]' derivation='None' name='[none:Kidhome:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NumWebVisitsMonth]' derivation='None' name='[none:NumWebVisitsMonth:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ID]' derivation='CountD' name='[pcto:ctd:ID:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Pane' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp2,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp2]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp4,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp4]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp5,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp5]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Exclusions (AcceptedCmp1,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:AcceptedCmp1:ok]' />
+              <groupfilter function='level-members' level='[none:Marital_Status:nk]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp1:ok]'>
+            <groupfilter function='level-members' level='[none:AcceptedCmp1:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Exclusions (AcceptedCmp1,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Education:nk]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Kidhome:ok]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Complain:ok]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:NumWebVisitsMonth:qk]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp4,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp5,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp1:ok]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp2,Marital_Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]' field-type='quantitative' max='1.3292134831460674' min='0.0' minor-origin='0.0' minor-spacing='0.20000000000000001' range-type='fixed' scope='rows' type='space' />
+            <format attr='width' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]' value='48' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]' value='24' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]' value='false' />
+            <format attr='display' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp1:ok]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp1:ok]' value='AcceptedCmp1'>
+              <formatted-text>
+                <run>AcceptedCmp1</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp1:ok]' />
+              <text column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000'><![CDATA[Accepted Campaign 1 ? :	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp1:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[Marital_Status:	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[Percentage of customers:	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]</rows>
+        <cols>([federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk] / [federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp1:ok])</cols>
+      </table>
+      <simple-id uuid='{27CA1349-B1B2-46FD-8578-F8738EA86682}' />
+    </worksheet>
+    <worksheet name='Fourth Campaign'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign' name='federated.0xb1ru619j3k4d15b28np1uhm6ef' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xb1ru619j3k4d15b28np1uhm6ef'>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp1]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp2]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp4]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp5]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Complain]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Education]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='integer' name='[ID]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Kidhome]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[NumWebVisitsMonth]' role='dimension' type='quantitative' />
+            <column-instance column='[AcceptedCmp4]' derivation='None' name='[none:AcceptedCmp4:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Complain]' derivation='None' name='[none:Complain:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Education]' derivation='None' name='[none:Education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Kidhome]' derivation='None' name='[none:Kidhome:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NumWebVisitsMonth]' derivation='None' name='[none:NumWebVisitsMonth:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ID]' derivation='CountD' name='[pcto:ctd:ID:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Pane' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp1,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp1]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp2,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp2]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp5,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp5]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Exclusions (AcceptedCmp4,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:AcceptedCmp4:ok]' />
+              <groupfilter function='level-members' level='[none:Marital_Status:nk]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Exclusions (AcceptedCmp4,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Education:nk]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Kidhome:ok]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Complain:ok]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:NumWebVisitsMonth:qk]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp1,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp5,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp2,Marital_Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]' scope='rows' value='true' />
+            <format attr='width' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]' value='48' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]' value='false' />
+            <format attr='display' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp4:ok]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp4:ok]' />
+              <text column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000'><![CDATA[Accepted Campaign 4 ? :	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp4:ok]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#000000'><![CDATA[Marital_Status:	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#000000'><![CDATA[Percentage of Customers:	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]</rows>
+        <cols>([federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk] / [federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp4:ok])</cols>
+      </table>
+      <simple-id uuid='{AC6A6493-25F3-4C09-AF4B-64C549B25BDE}' />
+    </worksheet>
+    <worksheet name='Second Campaign'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign' name='federated.0xb1ru619j3k4d15b28np1uhm6ef' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xb1ru619j3k4d15b28np1uhm6ef'>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp1]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp2]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp4]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp5]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Complain]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Education]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='integer' name='[ID]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Kidhome]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[NumWebVisitsMonth]' role='dimension' type='quantitative' />
+            <column-instance column='[AcceptedCmp2]' derivation='None' name='[none:AcceptedCmp2:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Complain]' derivation='None' name='[none:Complain:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Education]' derivation='None' name='[none:Education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Kidhome]' derivation='None' name='[none:Kidhome:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NumWebVisitsMonth]' derivation='None' name='[none:NumWebVisitsMonth:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ID]' derivation='CountD' name='[pcto:ctd:ID:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Pane' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp1,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp1]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp4,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp4]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp5,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp5]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Exclusions (AcceptedCmp2,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:AcceptedCmp2:ok]' />
+              <groupfilter function='level-members' level='[none:Marital_Status:nk]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Exclusions (AcceptedCmp2,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Education:nk]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Kidhome:ok]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Complain:ok]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:NumWebVisitsMonth:qk]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp1,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp4,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp5,Marital_Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]' value='56' />
+            <format attr='display' class='0' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]' value='false' />
+            <format attr='display' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp2:ok]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp2:ok]' value='Response to Offer'>
+              <formatted-text>
+                <run bold='true'>Response to Offer</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp2:ok]' />
+              <text column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000'><![CDATA[Accepted Campaign 2 ? :	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp2:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[Marital_Status:	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[Percentage of customers:	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]</rows>
+        <cols>([federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk] / [federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp2:ok])</cols>
+      </table>
+      <simple-id uuid='{5AC967DD-53E6-4D63-8ABA-6D55E690F83C}' />
+    </worksheet>
+    <worksheet name='Third Campaign'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marketing_campaign' name='federated.0xb1ru619j3k4d15b28np1uhm6ef' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xb1ru619j3k4d15b28np1uhm6ef'>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp1]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp2]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp3]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp4]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[AcceptedCmp5]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Complain]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Education]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='integer' name='[ID]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Kidhome]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[NumWebVisitsMonth]' role='dimension' type='quantitative' />
+            <column-instance column='[AcceptedCmp3]' derivation='None' name='[none:AcceptedCmp3:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Complain]' derivation='None' name='[none:Complain:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Education]' derivation='None' name='[none:Education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Kidhome]' derivation='None' name='[none:Kidhome:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NumWebVisitsMonth]' derivation='None' name='[none:NumWebVisitsMonth:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ID]' derivation='CountD' name='[pcto:ctd:ID:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Pane' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp1,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp1]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp2,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp2]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp4,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp4]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp5,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[AcceptedCmp5]' />
+              <groupfilter function='level-members' level='[Marital_Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Exclusions (AcceptedCmp3,Marital_Status)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:AcceptedCmp3:ok]' />
+              <groupfilter function='level-members' level='[none:Marital_Status:nk]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Exclusions (AcceptedCmp3,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Education:nk]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Kidhome:ok]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Complain:ok]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:NumWebVisitsMonth:qk]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp1,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp4,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp5,Marital_Status)]</column>
+            <column>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[Action (AcceptedCmp2,Marital_Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]' value='false' />
+            <format attr='display' field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp3:ok]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp3:ok]' />
+              <text column='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000'><![CDATA[Accepted Campaign 3 ?:	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp3:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[Marital_Status:	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[Percentage of customers:	<[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[pcto:ctd:ID:qk:2]</rows>
+        <cols>([federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk] / [federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp3:ok])</cols>
+      </table>
+      <simple-id uuid='{893C0BB3-788A-495F-B99D-159596282DF0}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Historic Offer Acceptance'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='marketing_campaign' name='federated.0xb1ru619j3k4d15b28np1uhm6ef' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0xb1ru619j3k4d15b28np1uhm6ef'>
+        <column aggregation='Sum' datatype='integer' name='[Complain]' role='dimension' type='ordinal' />
+        <column datatype='string' name='[Education]' role='dimension' type='nominal' />
+        <column datatype='integer' name='[Kidhome]' role='dimension' type='ordinal' />
+        <column datatype='integer' name='[NumWebVisitsMonth]' role='dimension' type='quantitative' />
+        <column-instance column='[Complain]' derivation='None' name='[none:Complain:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[Education]' derivation='None' name='[none:Education:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Kidhome]' derivation='None' name='[none:Kidhome:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[NumWebVisitsMonth]' derivation='None' name='[none:NumWebVisitsMonth:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='39' param='horz' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='36' param='horz' w='98400' x='800' y='1000'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='33' param='horz' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='30' param='horz' w='98400' x='800' y='1000'>
+                  <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='27' param='horz' w='98400' x='800' y='1000'>
+                    <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='23' param='horz' w='98400' x='800' y='1000'>
+                      <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='19' param='horz' w='98400' x='800' y='1000'>
+                        <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='15' param='horz' w='98400' x='800' y='1000'>
+                          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='12' param='horz' w='98400' x='800' y='1000'>
+                            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='10' w='98400' x='800' y='1000'>
+                              <zone h='46000' id='3' name='First Campaign' show-title='false' w='37996' x='800' y='10500'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone h='46000' id='5' name='Second Campaign' show-title='false' w='27804' x='38796' y='10500'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone h='46000' id='6' name='Third Campaign' show-title='false' w='32600' x='66600' y='10500'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone h='42500' id='7' name='Fourth Campaign' show-title='false' w='37996' x='800' y='56500'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone h='42500' id='8' name='FIfth Campaign' show-title='false' w='27804' x='38796' y='56500'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone h='42500' id='9' name='Current Response' show-title='false' w='32600' x='66600' y='56500'>
+                                <layout-cache cell-count-w='12' minheight='196' non-cell-size-w='57' type-h='scalable' type-w='cell' />
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='9500' id='28' mode='dropdown' name='First Campaign' param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Education:nk]' values='database' w='20899' x='800' y='1000'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='9500' id='31' mode='dropdown' name='First Campaign' param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Kidhome:ok]' values='database' w='19600' x='21699' y='1000'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='9500' id='34' name='First Campaign' param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:NumWebVisitsMonth:qk]' values='database' w='15606' x='83594' y='1000'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='9500' id='16' leg-item-layout='horz' name='Second Campaign' pane-specification-id='0' param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp2:ok]' w='25794' x='57800' y='1000'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='9500' id='37' mode='dropdown' name='First Campaign' param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Complain:ok]' values='database' w='16501' x='41299' y='1000'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                            </zone>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='8000' id='13' w='13300' x='14500' y='9500'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>1st Response</run>
+            <run fontalignment='1'>Æ&#10;&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='7250' id='17' w='15100' x='43100' y='10125'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>2nd Response</run>
+            <run fontalignment='1'>Æ&#10;&#10;&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='7250' id='20' w='13800' x='73900' y='9000'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>3rd Response</run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='7250' id='21' w='14400' x='12900' y='54875'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>4th Response</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='7250' id='24' w='14400' x='44400' y='54875'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>5th Response</run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='7250' id='25' w='17300' x='74400' y='54625'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>Current Response</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2450' minheight='2450' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='51' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='50' param='vert' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='7250' id='20' w='13800' x='73900' y='9000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>3rd Response</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='8000' id='13' w='13300' x='14500' y='9500'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>1st Response</run>
+                    <run fontalignment='1'>Æ&#10;&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='7250' id='17' w='15100' x='43100' y='10125'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>2nd Response</run>
+                    <run fontalignment='1'>Æ&#10;&#10;&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='9500' id='28' mode='dropdown' name='First Campaign' param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Education:nk]' values='database' w='20899' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='9500' id='31' mode='dropdown' name='First Campaign' param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Kidhome:ok]' values='database' w='19600' x='21699' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='9500' id='34' name='First Campaign' param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:NumWebVisitsMonth:qk]' values='database' w='15606' x='83594' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='9500' id='37' mode='dropdown' name='First Campaign' param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Complain:ok]' values='database' w='16501' x='41299' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46000' id='3' is-fixed='true' name='First Campaign' show-title='false' w='37996' x='800' y='10500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46000' id='5' is-fixed='true' name='Second Campaign' show-title='false' w='27804' x='38796' y='10500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='9500' id='16' leg-item-layout='horz' name='Second Campaign' pane-specification-id='0' param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp2:ok]' w='25794' x='57800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46000' id='6' is-fixed='true' name='Third Campaign' show-title='false' w='32600' x='66600' y='10500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='7250' id='25' w='17300' x='74400' y='54625'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>Current Response</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='7250' id='21' w='14400' x='12900' y='54875'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>4th Response</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='7250' id='24' w='14400' x='44400' y='54875'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>5th Response</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42500' id='7' is-fixed='true' name='Fourth Campaign' show-title='false' w='37996' x='800' y='56500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42500' id='8' is-fixed='true' name='FIfth Campaign' show-title='false' w='27804' x='38796' y='56500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42500' id='9' is-fixed='true' name='Current Response' show-title='false' w='32600' x='66600' y='56500'>
+                  <layout-cache cell-count-w='12' minheight='196' non-cell-size-w='57' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8B3240E8-2B74-4950-A084-9FC53483CC25}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='dashboard' maximized='true' name='Historic Offer Acceptance'>
+      <viewpoints>
+        <viewpoint name='Current Response'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='FIfth Campaign'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='First Campaign'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='2' />
+        </viewpoint>
+        <viewpoint name='Fourth Campaign'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Second Campaign'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp2:ok]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Third Campaign'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{049B53FC-D34B-4191-ABE9-8C1D236A5C02}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Current Response'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Response:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[AcceptedCmp5 (group)]</field>
+            <field>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp1:ok]</field>
+            <field>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:ID:nk]</field>
+            <field>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]</field>
+            <field>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Response:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{14EBA6BF-5BFC-4FAA-AC66-7D003F50D96B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='FIfth Campaign'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp5:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp5:ok]</field>
+            <field>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{185ADBBC-8621-4156-A16B-3860000DAE62}' />
+    </window>
+    <window class='worksheet' hidden='true' name='First Campaign'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Complain:ok]' type='filter' />
+            <card param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:NumWebVisitsMonth:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Kidhome:ok]' type='filter' />
+            <card param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Education:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp1:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp1:ok]</field>
+            <field>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{EB133DB0-F0EB-4803-A5DB-3B3FA859993B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Fourth Campaign'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp4:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp4:ok]</field>
+            <field>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FFAF2F03-0C3A-4988-A465-9D423007467A}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Second Campaign'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp2:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6DAAA91F-E7E0-42C8-97E9-8F1539E7784C}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Third Campaign'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp3:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:AcceptedCmp3:ok]</field>
+            <field>[federated.0xb1ru619j3k4d15b28np1uhm6ef].[none:Marital_Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{26EF6F45-3098-4F28-8613-616970202479}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Historic Offer Acceptance' width='192'>
+      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
+      lb2RAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
